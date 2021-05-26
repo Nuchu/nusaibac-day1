@@ -1,0 +1,134 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace day1
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			int age;
+			Console.WriteLine("Enter your age");
+			age=Convert.ToInt32(Console.ReadLine());
+			if(age>=18 && age<=60)
+			{
+				Console.WriteLine("You can vote");
+			}
+			else if(age<18)
+			{
+				Console.WriteLine("You Cannot vote");
+			}
+			else if(age>60)
+			{
+				Console.WriteLine("Senior Citizen");
+			}
+			Console.ReadLine();
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace day1
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			int x,y,z;
+			Console.WriteLine("Enter your first number");
+			x=Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Enter your second number");
+			y=Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Enter your third number");
+			z=Convert.ToInt32(Console.ReadLine());
+			if(x>y && x>z)
+			{
+				Console.WriteLine(" greatest number is:"+x);
+			}
+			else if(y>x && y>z)
+			{
+				Console.WriteLine("greatest number is"+y);
+			}
+			else if(z>x && z>y)
+			{
+				Console.WriteLine("greatest number is"+z);
+			}
+			Console.ReadLine();
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace day1
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			int x;
+			Console.WriteLine("Enter the number");
+			x=Convert.ToInt32(Console.ReadLine());
+			
+			if(x==1)
+			{
+				Console.WriteLine("One");
+			}
+			else if(x==2)
+			{
+				Console.WriteLine("two");
+			}
+			else if(x==3)
+			{
+				Console.WriteLine("three");
+			}
+			else if(x==4)
+			{
+				Console.WriteLine("four");
+			}
+			else if(x==5)
+			{
+				Console.WriteLine("five");
+			}
+			Console.ReadLine();
+		}
+	}
+}

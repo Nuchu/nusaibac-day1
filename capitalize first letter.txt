@@ -1,0 +1,68 @@
+
+using System;
+                  
+public class Program
+{​​​​​​​
+    public static void Main(string[] args)
+    {​​​​​​​
+        string result="",str1;
+        Console.WriteLine("enter the string1");
+        str1=Console.ReadLine();
+        for(int i=str1.Length-1;i>=0;i--)
+        {​​​​​​​
+            result=result+str1[i];
+        }​​​​​​​
+        if (result==str1)
+        {​​​​​​​
+            Console.WriteLine("palindrome");
+        }​​​​​​​
+        else
+        {​​​​​​​
+            Console.WriteLine("Not palindrome");
+        }​​​​​​​
+    }​​​​​​​
+}​​​​​​​
+       
+
+
+string sample = "i love my india";
+char[] arr = sample.ToCharArray();
+for (int i = 0; i < sample.Length; i++)
+{​​​
+if(i==0)
+{​​​
+arr[i] = Convert.ToChar(sample[i].ToString().ToUpper());
+}​​​
+else
+{​​​
+if(sample[i]==' ')
+{​​​
+arr[i+1] = Convert.ToChar(sample[i+1].ToString().ToUpper());
+}​​​
+}​​​
+}​​​
+string output = new string(arr);
+Console.WriteLine("Input String is : " + sample);
+Console.WriteLine("Output String is : "+ output);
+Console.ReadLine();
+
+15:17
+string sample = "i love my india";
+
+string []sample1 = sample.Split(' ');
+string sample2=string.Empty;
+for (int i = 0; i < sample1.Length; i++)
+{​​​
+if (sample1[i].Length > 1)
+{​​​
+
+
+sample2 = sample2 + " " + sample1[i].Substring(0, 1).ToUpper() + sample1[i].Substring(1, sample1[i].Length-1);
+}​​​
+else
+{​​​
+sample2 = sample2 + sample1[i].ToUpper();
+}​​​
+}​​​
+
+

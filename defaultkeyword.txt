@@ -1,0 +1,16 @@
+using System;
+                   
+public class Program
+{
+    public static void Main(string[] args)
+    {
+		int a=5,b=8;
+		sum(a);
+		Console.ReadLine();
+	}
+	public static void sum(int a,int b=7)
+	{
+		Console.WriteLine(a+b);
+	}
+}
+		

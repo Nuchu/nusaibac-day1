@@ -1,0 +1,15 @@
+using System;
+                   
+public class Program
+{
+    public static void Main(string[] args)
+    {
+		string str1;
+		Console.WriteLine("provide your string");
+		str1=Console.ReadLine();
+		string newstring;
+		newstring=str1.ToUpper();
+		Console.WriteLine(newstring);
+	}
+}
+		
